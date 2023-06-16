@@ -1,7 +1,5 @@
 <!-- README template got from the coding bootcamp github pages. 
      https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide -->
-# Code Refactor Starter Code
-
 ## Description
 
 The goal of this project was to make the webpage more accessible to its users and to make the HTML and CSS files easier for developers to read by adding comments and semantic elements. Before I started the project, the webpage that was given to me looked fine and functioned properly for the most part. However, looking at the code, the HTML did not include semantic elements, meaning it was hard for me and other devs to understand. So I added semantic elements to make it easier to read. The images included in the HTML file did not have alt attributes, so I added them. Without alt attributes, a screenreader will not describe the image, making the webpage less accessible for users. The CSS file was pretty large, and looking at it I saw that the original developer used way more classes than neccessary. I reduced the amount of classes in the CSS to make it less overwhelming as well as added comments to each selector to make it easier for developers to understand. I learned how to make code easeir to read and how to make webpages more accessible to its users.
@@ -13,7 +11,8 @@ The goal of this project was to make the webpage more accessible to its users an
 
 View the website by visiting the link. You can read the content on this website to learn more about Horiseon Web Marketing. Click on the links in the navigation bar to jump to a section of content.
 
-![website screenshot](assets/images/website-screenshot.png)
+![website screenshot](C:\Users\aubre\bootcamp\module-1-challenge\Develop\assets\images\website-screenshot.png)
+![website link](C:\Users\aubre\bootcamp\module-1-challenge\Develop\assets\images\website-screenshot.png)
 
 ## Credits
 
