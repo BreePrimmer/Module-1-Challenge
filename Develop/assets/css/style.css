@@ -1,13 +1,25 @@
+/* The "*" symbol is the universal class selector. All of the rules in this selector will be applied to the whole webpage.  */
+
 * {
+    /* box-sizing is a property that affects how width and height of containers are measured. By default, padding and border size are added
+       onto the existing width and height measurements. With box-sizing, the padding and border sizes are kept within the width and height
+       measurements. It is better to have box-sizing: border-box because it will represent more accurate width and height measuremens.
+       Referenced W3 Schools "CSS Box Sizing". https://www.w3schools.com/css/css3_box-sizing.asp */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Element selectors */
+
+/* Sets the background color of the webpage. */
 body {
     background-color: #d9dcd6;
 }
 
+/* Class selectors */
+
+/* This styles the header of the webpage. */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +27,18 @@ body {
     color: #ffffff;
 }
 
+/* This styles the title of the webpage at the top left of the screen, "Horiseon" */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* This styles the "seo" letters in "Horiseon" to be a different color than the rest of the letters. */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* This styles the navigation bar in the top right of the webpage. */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +47,29 @@ body {
     font-size: 20px;
 }
 
+/* This gets rid of the bullet points that by default are normally next to the listed elements in the nav. */
 .header nav ul {
     list-style-type: none;
 }
 
+/* This changes the display of the listed elements, or the navigation links to be inline so they will be next to each other. */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Changes the style of the links from the default browser style to our custom style. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* styles the font-size of our paragraph elements. */
 p {
     font-size: 16px;
 }
 
+/* Styles the main image of the webpage by setting the size and position. */
 .section-image {
     height: 800px;
     width: 100%;
@@ -59,25 +79,54 @@ p {
     background-position: center;
 }
 
+/* This is positioning the images for "Search Engine Optimization" and "Social Media Marketing" To the left of the text. */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* This is positioning the image for "Online Reputation Management" to the right of the text. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* This is styling the main content of the page to take up 75 percent of the width of the screen and setting its margin and display. */
 .content {
     width: 75%;
+    /* display: inline-block is similar to display:inline but it lets us set the height and width of the content.
+       Referenced W3 Schools "CSS Layout - display:inline-block. https://www.w3schools.com/css/css_inline-block.asp */
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Styles the main content section blocks. */
+.content-sections {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Sets the max height of the images in the main content blocks. */
+.content-sections img {
+    max-height: 200px;
+}
+
+/* Styles the headings in the main content blocks. */
+.content-sections h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Styles the benefits content on the right side of the page. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
+    /* clear: both; clears the element of any float on both sides of the element. This means that nothing will be next to the element, only above or below.
+       Referenced Geeksforgeeks "What does the CSS rule clear:both; do?" https://www.geeksforgeeks.org/what-does-the-css-rule-clear-both-do/ */
     clear: both;
     float: right;
     width: 20%;
@@ -86,108 +135,26 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Styles the sections in the benefits section of the webpage. */
+.benefit-sections {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* Styles the headings of the sections in the benefits section of the webpage. */
+.benefit-sections h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Styles the images of the sections in the benefits section of the webpage. */
+.benefit-sections img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Styles the footer of the webage. */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +162,7 @@ p {
     text-align: center;
 }
 
+/* Styles the heading in the footer. */
 .footer h2 {
     font-size: 20px;
 }
