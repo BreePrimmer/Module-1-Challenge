@@ -11,8 +11,8 @@ The goal of this project was to make the webpage more accessible to its users an
 
 View the website by visiting the link. You can read the content on this website to learn more about Horiseon Web Marketing. Click on the links in the navigation bar to jump to a section of content.
 
-![website screenshot](C:\Users\aubre\bootcamp\module-1-challenge\Develop\assets\images\website-screenshot.png)
-![website link](C:\Users\aubre\bootcamp\module-1-challenge\Develop\assets\images\website-screenshot.png)
+![website screenshot](Develop/assets/images/website-screenshot.png)
+![website link](https://breeprimmer.github.io/Module-1-Challenge/)
 
 ## Credits
 
